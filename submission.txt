@@ -1,0 +1,20 @@
+### Cara Menjalankan ETL Pipeline
+1. Install dependencies:
+   pip install -r requirements.txt
+
+2. Salin .env.example menjadi .env dan isi kredensial:
+   cp .env.example .env
+
+3. Letakkan file google-sheets-api.json di root folder proyek
+
+4. Jalankan pipeline:
+   python main.py
+
+### Cara Menjalankan Unit Test
+pytest tests/ -v
+
+### Cara Menjalankan Test Coverage
+python -m pytest --cov=main --cov=utils --cov-report=term-missing -q
+
+### URL Google Sheets
+https://docs.google.com/spreadsheets/d/1clWmrqBuj4otFj4IQz0WpufTiuZkbVlaSu9vOxEly0E/edit?gid=0#gid=0
